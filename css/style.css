@@ -1,0 +1,44 @@
+/* impostazioni generali */
+.margin {
+  margin: 0 auto;
+}
+
+.img-circle {
+  background-color: #204060;
+  width: 140px;
+  height: 140px;
+}
+
+.img-rounded {
+  margin: 10px 0;
+  height: 150px;
+  background-color: #b3003b;
+}
+
+li {
+  display: inline-block;
+  list-style: none;
+  color: white;
+}
+
+/* impostazioni header */
+nav.container-fluid {
+  background-color: #204060;
+}
+header .breadcrumb {
+  margin-top: 20px;
+}
+.jumbotron {
+  background-color: #00b386;
+}
+
+/* impostazioni section 1 */
+#section2 .container-fluid {
+  background-color: #00b386;
+  padding: 20px;
+}
+
+/* impostazioni section 3 */
+#section3 .container {
+  padding: 50px 0;
+}
