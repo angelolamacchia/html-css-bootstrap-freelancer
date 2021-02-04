@@ -14,6 +14,11 @@ body {
   margin: 0 auto;
 }
 
+.wrapper_big {
+  width: 80%;
+  margin: 0 auto;
+}
+
 .img-circle {
   background-color: #204060;
   width: 200px;
@@ -48,9 +53,11 @@ h2 {
   padding-bottom: 30px;
 }
 
+/* impostazioni bottoni */
 .btn_green {
-  background-color: rgba(0, 0, 0, 0);
+  background-color: #00b386;
   border: 1px solid white;
+  color: white;
 }
 .btn_green:hover {
   background-color: white;
@@ -63,7 +70,7 @@ h2 {
   background-color: #204060;
   position: fixed;
   top: 0;
-  z-index: 1;
+  z-index: 999;
 }
 .top_header h3 {
   margin: 0;
@@ -117,6 +124,29 @@ h2 {
   background-color: #00b386;
 }
 
+/* impostazioni section 3 */
+#section3 input {
+  border: none;
+  height: 60px;
+  color: #204060;
+  font-size: 20px;
+  width: 100%;
+  border-bottom: 1px solid lightgrey;
+}
+#section3 .form-group {
+  border: none;
+}
+#section3 .row p {
+  font-size: 25px;
+  color: grey;
+}
+#section3 .btn {
+  margin-top: 10px;
+}
+#section3 .btn:hover {
+  background-color: #28a485;
+}
+
 
 /* impostazioni footer */
 footer .container-fluid {
@@ -124,10 +154,25 @@ footer .container-fluid {
   background-color: #204060;
   color: white;
 }
-
 footer .container_footer_2 {
   background-color: #282d4b;
 }
+footer .circle {
+  border: 1px solid white;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  padding: 0 0;
+}
+.circle:hover {
+  background-color: white;
+  color: #204060;
+}
+.link_green {
+  color: #00b386;
+}
+
 
 @media screen and (max-width: 768px) {
   body {
