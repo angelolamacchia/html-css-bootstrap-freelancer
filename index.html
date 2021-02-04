@@ -4,6 +4,8 @@
     <meta charset="utf-8">
     <title>Freelancer</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -11,66 +13,77 @@
 
   <body>
     <header>
-      <nav class="container-fluid"> <!--barra in alto-->
-        <div class="container">
-          <div class="col-md-4 col-xs-11 col-sm-6">
-            <h3>START BOOTSTRAP</h3>
+      <div class="top_header">
+        <nav class="container"> <!--barra in alto-->
+          <div class="row">
+            <div class="col-xs-6">
+              <h3>START BOOTSTRAP</h3>
+            </div>
+            <div class="col-xs-6 visible-xs text-right" id="bars">
+              <i class="fas fa-bars"></i>
+            </div>
+            <div class="col-xs-6 text-right hidden-xs">
+              <ul>
+                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+              </ul>
+            </div>
           </div>
-          <div class="col-xs-1" id="bars">
-            <i class="fas fa-bars"></i>
-          </div>
-          <div class="col-md-4 col-md-offset-4 hidden-xs-1 col-sm-6 text-right">
-            <ul>
-              <li><a href="#">PORTFOLIO</a></li>
-              <li><a href="#">ABOUT</a></li>
-              <li><a href="#">CONTACT</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
 
-      <div class="jumbotron">
-        <div class="img-circle margin"></div>
-        <div class="container text-center">
+      <div class="jumbotron text-center">
+        <div class="wrapper">
+          <img src="img/avataaars.svg" alt="">
+        </div>
+        <div class="container">
           <h1>START BOOTSTRAP</h1>
+          <div class="star">
+            <hr><i class="fas fa-star"></i><hr>
+          </div>
           <p>GRAPHIC ARTIST - WEB DESIGNER - ILLUSTRATOR</p>
         </div>
       </div>
     </header>
 
     <main>
-      <section id="section1">
-        <div class="container">
+      <section class="text-center" id="section1">
+        <h2>PORTFOLIO</h2>
+        <div class="star star_blue">
+          <hr><i class="fas fa-star"></i><hr>
+        </div>
+        <div class="container padding_bottom">
           <div class="row">
               <div class="col-lg-4 col-md-6 col-xs-12">
-                <div class="img-rounded">
-                  <div class="img-circle margin"></div>
+                <div class="box">
+                  <img class="img-rounded" src="img/cabin.png" alt="">
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 col-xs-12">
-                <div class="img-rounded">
-                  <div class="img-circle margin"></div>
+                <div class="box">
+                  <img class="img-rounded" src="img/cake.png" alt="">
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 col-xs-12">
-                <div class="img-rounded">
-                  <div class="img-circle margin"></div>
+                <div class="box">
+                  <img class="img-rounded" src="img/circus.png" alt="">
                 </div>
               </div>
 
               <div class="col-lg-4 col-md-6 col-xs-12">
-                <div class="img-rounded">
-                  <div class="img-circle margin"></div>
+                <div class="box">
+                  <img class="img-rounded" src="img/game.png" alt="">
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 col-xs-12">
-                <div class="img-rounded">
-                  <div class="img-circle margin"></div>
+                <div class="box">
+                  <img class="img-rounded" src="img/safe.png" alt="">
                 </div>
               </div>
               <div class="col-lg-4 col-md-6 col-xs-12">
-                <div class="img-rounded">
-                  <div class="img-circle margin"></div>
+                <div class="box">
+                  <img class="img-rounded" src="img/submarine.png" alt="">
                 </div>
               </div>
 
@@ -79,38 +92,63 @@
       </section>
 
       <section id="section2">
-        <div class="container-fluid">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-offset-2 col-md-4"><p>Lorem ipsum dolor sit amet, c, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
-              <div class="col-md-4"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+        <div class="container-fluid padding_bottom">
+          <div class="row text-center">
+            <h2>ABOUT</h2>
+            <div class="star">
+              <hr><i class="fas fa-star"></i><hr>
+            </div>
+          </div>
+          <div class="row">
+            <div class="wrapper">
+              <div class="col-xs-12 col-sm-6"><p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional SASS stylesheets for easy customization.</p></div>
+              <div class="col-xs-12 col-sm-6"><p>You can create your own custom avatar for the masthead, change the icon in the dividers, and add your email address to the contact form to make it fully functional!</p></div>
             </div>
           </div>
           <div class="col text-center">
-            <button class="btn btn-default">Download</button>
+            <button type="button" class="btn btn-lg btn_green"><i class="fas fa-download"></i> Download!</button>
           </div>
         </div>
       </section>
 
       <section id="section3">
-        <div class="container">
-          <div class="col-lg-8 col-lg-offset-2">
-            <input class="form-control" type="text" placeholder="Default input">
-          </div>
-          <div class="col-lg-8 col-lg-offset-2">
-            <input class="form-control" type="text" placeholder="Default input">
-          </div>
-          <div class="col-lg-8 col-lg-offset-2">
-            <input class="form-control" type="text" placeholder="Default input">
-          </div>
-          <div class="col-lg-8 col-lg-offset-2">
-            <input class="form-control" type="text" placeholder="Default input">
-          </div>
+        <div class="container-fluid">
+          <div class="wrapper">
+            <div class="row text-center">
+              <h2>PORTFOLIO</h2>
+              <div class="star star_blue">
+                <hr><i class="fas fa-star"></i><hr>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <input class="form-control" type="text" placeholder="Name">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <input class="form-control" type="text" placeholder="Email Address">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <input class="form-control" type="text" placeholder="Phone Number">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-xs-12">
+                <input class="form-control" type="text" placeholder="Message">
+              </div>
+            </div>
 
-          <div class="form-group col-lg-8 col-lg-offset-2">
-            <label for="exampleFormControlTextarea1">Message</label>
-            <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
-            <button class="btn btn-default">Send</button>
+            <div class="row">
+              <div class="form-group col-xs-12">
+                <label for="exampleFormControlTextarea1">Message</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="6"></textarea>
+                <button class="btn btn-default">Send</button>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
