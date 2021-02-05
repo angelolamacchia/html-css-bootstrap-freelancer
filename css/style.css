@@ -15,7 +15,7 @@ body {
 }
 
 .wrapper_big {
-  width: 80%;
+  width: 200px;
   margin: 0 auto;
 }
 
@@ -23,11 +23,6 @@ body {
   background-color: #204060;
   width: 200px;
   height: 200px;
-}
-
-.box img {
-  width: 100%;
-  margin: 20px auto;
 }
 
 li {
@@ -118,6 +113,36 @@ h2 {
 #section1, #section3 {
   color: #204060
 }
+.box {
+  width: 100%;
+  margin: 20px auto;
+  position: relative;
+  background-color: red;
+}
+.box img {
+  width: 100%;
+  height: 100%;
+}
+.box:hover .layover {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 179, 134, 0.5);
+  color: white;
+  position: absolute;
+  top: 0;
+}
+.layover .fas {
+  font-size: 100px;
+  line-height: 100%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.layover {
+  display: none;
+}
 
 /* impostazioni section 2 */
 #section2 {
@@ -147,7 +172,6 @@ h2 {
   background-color: #28a485;
 }
 
-
 /* impostazioni footer */
 footer .container-fluid {
   padding: 30px 0;
@@ -159,11 +183,12 @@ footer .container_footer_2 {
 }
 footer .circle {
   border: 1px solid white;
-  height: 40px;
-  width: 40px;
-  line-height: 40px;
+  height: 50px;
+  width: 50px;
+  line-height: 50px;
+  font-size: 20px;
   border-radius: 50%;
-  padding: 0 0;
+  margin: 0 auto;
 }
 .circle:hover {
   background-color: white;
